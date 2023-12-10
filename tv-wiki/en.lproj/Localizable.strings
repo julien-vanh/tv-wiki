@@ -1,0 +1,23 @@
+/* 
+  Localizable.strings
+  PrettyWiki
+
+  Created by Julien Vanheule on 23/10/2019.
+  Copyright © 2019 Julien Vanheule. All rights reserved.
+*/
+"tabbar.discover" = "Discover";
+"tabbar.favorites" = "Bookmarks";
+"tabbar.history" = "History";
+"tabbar.search" = "Search";
+"page.credit" = "Content subject to CC-BY-SA 3.0 license (https://creativecommons.org/licenses/by-sa/3.0/) \nWikipedia contributors. %@ Wikipedia, The Free Encyclopedia. (https://en.wikipedia.org/wiki/%@)";
+"button.play" = "Play";
+"button.pause" = "Paused";
+"button.sections" = "Full text";
+"button.favorites.add" = "Bookmark";
+"button.favorites.added" = "Added";
+
+"discover.title" = "In the news";
+"discover.links" = "Discover";
+
+"wikipedia.host" = "https://en.wikipedia.org/w/api.php";
+"wikipedia.main-page" = "Main_Page";

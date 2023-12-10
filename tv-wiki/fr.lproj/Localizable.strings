@@ -1,0 +1,25 @@
+/* 
+  Localizable.strings
+  PrettyWiki
+
+  Created by Julien Vanheule on 23/10/2019.
+  Copyright © 2019 Julien Vanheule. All rights reserved.
+*/
+"tabbar.discover" = "Découvrir";
+"tabbar.favorites" = "Marque-pages";
+"tabbar.history" = "Historique";
+"tabbar.search" = "Rechercher";
+"page.credit" = "Contenu soumis à la licence CC-BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) \nSource : Article %@ de Wikipédia en français (https://fr.wikipedia.org/wiki/%@).";
+"button.play" = "Lecture";
+"button.pause" = "Pause";
+"button.sections" = "Texte complet";
+"button.favorites.add" = "Marque page";
+"button.favorites.added" = "Ajouté";
+
+"discover.title" = "Pages à la une";
+"discover.links" = "Découvrir";
+
+"wikipedia.host" = "https://fr.wikipedia.org/w/api.php";
+"wikipedia.main-page" = "Wikipedia:Accueil_principal";
+
+"Clear history" = "Supprimer l'historique";

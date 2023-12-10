@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.XIB" version="3.0" toolsVersion="17701" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="appleTV" appearance="light"/>
+    <dependencies>
+        <deployment identifier="tvOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="InfoboxCell" id="E6F-86-XC2" customClass="InfoboxCell" customModule="TV_Wiki" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="746" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="hpo-vw-1jn">
+                <rect key="frame" x="0.0" y="0.0" width="746" height="50"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dkX-7g-E5W">
+                        <rect key="frame" x="0.0" y="0.0" width="300" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="300" id="Zh4-de-k6G"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o4m-st-yfv" userLabel="Value">
+                        <rect key="frame" x="310" y="0.0" width="436" height="50"/>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                        <color key="textColor" systemColor="secondaryLabelColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="o4m-st-yfv" secondAttribute="bottom" id="0Cv-CG-YeZ"/>
+                    <constraint firstItem="o4m-st-yfv" firstAttribute="top" secondItem="hpo-vw-1jn" secondAttribute="top" id="InE-0X-aAT"/>
+                    <constraint firstAttribute="bottom" secondItem="dkX-7g-E5W" secondAttribute="bottom" id="N8q-mw-ECB"/>
+                    <constraint firstItem="dkX-7g-E5W" firstAttribute="leading" secondItem="hpo-vw-1jn" secondAttribute="leading" id="Wc3-jt-rsw"/>
+                    <constraint firstItem="dkX-7g-E5W" firstAttribute="top" secondItem="hpo-vw-1jn" secondAttribute="top" id="pjV-p4-zsW"/>
+                    <constraint firstAttribute="trailing" secondItem="o4m-st-yfv" secondAttribute="trailing" id="sHg-Up-kNi"/>
+                    <constraint firstItem="o4m-st-yfv" firstAttribute="leading" secondItem="dkX-7g-E5W" secondAttribute="trailing" constant="10" id="zEQ-Xu-w5e"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <connections>
+                <outlet property="labelLabel" destination="dkX-7g-E5W" id="Aa0-yx-DcV"/>
+                <outlet property="valueLabel" destination="o4m-st-yfv" id="5z0-VG-oJx"/>
+            </connections>
+            <point key="canvasLocation" x="-4" y="-228"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

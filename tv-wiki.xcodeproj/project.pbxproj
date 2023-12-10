@@ -1,0 +1,557 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F96B27062B26027D0082D84A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96B27052B26027D0082D84A /* AppDelegate.swift */; };
+		F96B27082B26027D0082D84A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96B27072B26027D0082D84A /* ViewController.swift */; };
+		F96B270B2B26027D0082D84A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F96B27092B26027D0082D84A /* Main.storyboard */; };
+		F96B270D2B26027E0082D84A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F96B270C2B26027E0082D84A /* Assets.xcassets */; };
+		F96B27102B26027E0082D84A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F96B270E2B26027E0082D84A /* LaunchScreen.storyboard */; };
+		F96B27192B2604A00082D84A /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = F96B27182B2604A00082D84A /* Kingfisher */; };
+		F96B272B2B2605A40082D84A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F96B272D2B2605A40082D84A /* Localizable.strings */; };
+		F96B27502B2606B50082D84A /* SectionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96B27332B2606B50082D84A /* SectionsViewController.swift */; };
+		F96B27512B2606B50082D84A /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96B27342B2606B50082D84A /* FavoritesViewController.swift */; };
+		F96B27522B2606B50082D84A /* ImagesPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96B27352B2606B50082D84A /* ImagesPageViewController.swift */; };
+		F96B27532B2606B50082D84A /* SearchResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96B27362B2606B50082D84A /* SearchResultViewController.swift */; };
+		F96B27542B2606B50082D84A /* DiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96B27372B2606B50082D84A /* DiscoverViewController.swift */; };
+		F96B27552B2606B50082D84A /* WikiPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96B27382B2606B50082D84A /* WikiPageViewController.swift */; };
+		F96B27562B2606B50082D84A /* PageImageViewControler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96B27392B2606B50082D84A /* PageImageViewControler.swift */; };
+		F96B27572B2606B50082D84A /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96B273A2B2606B50082D84A /* HistoryViewController.swift */; };
+		F96B27582B2606B50082D84A /* WikiPageContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96B273C2B2606B50082D84A /* WikiPageContent.swift */; };
+		F96B27592B2606B50082D84A /* ImageMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96B273D2B2606B50082D84A /* ImageMetadata.swift */; };
+		F96B275A2B2606B50082D84A /* WikiResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96B273E2B2606B50082D84A /* WikiResponse.swift */; };
+		F96B275B2B2606B50082D84A /* WikiPageParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96B27402B2606B50082D84A /* WikiPageParser.swift */; };
+		F96B275C2B2606B50082D84A /* WikipediaService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96B27412B2606B50082D84A /* WikipediaService.swift */; };
+		F96B275D2B2606B50082D84A /* String+HTML.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96B27432B2606B50082D84A /* String+HTML.swift */; };
+		F96B275E2B2606B50082D84A /* HistoryFooterReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96B27452B2606B50082D84A /* HistoryFooterReusableView.swift */; };
+		F96B275F2B2606B50082D84A /* InfoboxCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F96B27462B2606B50082D84A /* InfoboxCell.xib */; };
+		F96B27602B2606B50082D84A /* SectionTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96B27472B2606B50082D84A /* SectionTableCell.swift */; };
+		F96B27612B2606B50082D84A /* ImageViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96B27482B2606B50082D84A /* ImageViewCell.swift */; };
+		F96B27622B2606B50082D84A /* LinkViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96B27492B2606B50082D84A /* LinkViewCell.swift */; };
+		F96B27632B2606B50082D84A /* LinkViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F96B274A2B2606B50082D84A /* LinkViewCell.xib */; };
+		F96B27642B2606B50082D84A /* InfoboxCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96B274B2B2606B50082D84A /* InfoboxCell.swift */; };
+		F96B27652B2606B50082D84A /* LoadingOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96B274C2B2606B50082D84A /* LoadingOverlay.swift */; };
+		F96B27662B2606B50082D84A /* ThumbnailPageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96B274D2B2606B50082D84A /* ThumbnailPageCell.swift */; };
+		F96B27672B2606B50082D84A /* ImageViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F96B274E2B2606B50082D84A /* ImageViewCell.xib */; };
+		F96B27682B2606B50082D84A /* ThumbnailPageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F96B274F2B2606B50082D84A /* ThumbnailPageCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F96B27022B26027D0082D84A /* tv-wiki.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tv-wiki.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F96B27052B26027D0082D84A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F96B27072B26027D0082D84A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F96B270A2B26027D0082D84A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F96B270C2B26027E0082D84A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F96B270F2B26027E0082D84A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F96B27162B2603DE0082D84A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		F96B272C2B2605A40082D84A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F96B272E2B2605A70082D84A /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F96B272F2B2605DB0082D84A /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F96B27332B2606B50082D84A /* SectionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionsViewController.swift; sourceTree = "<group>"; };
+		F96B27342B2606B50082D84A /* FavoritesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
+		F96B27352B2606B50082D84A /* ImagesPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagesPageViewController.swift; sourceTree = "<group>"; };
+		F96B27362B2606B50082D84A /* SearchResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResultViewController.swift; sourceTree = "<group>"; };
+		F96B27372B2606B50082D84A /* DiscoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverViewController.swift; sourceTree = "<group>"; };
+		F96B27382B2606B50082D84A /* WikiPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WikiPageViewController.swift; sourceTree = "<group>"; };
+		F96B27392B2606B50082D84A /* PageImageViewControler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageImageViewControler.swift; sourceTree = "<group>"; };
+		F96B273A2B2606B50082D84A /* HistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		F96B273C2B2606B50082D84A /* WikiPageContent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WikiPageContent.swift; sourceTree = "<group>"; };
+		F96B273D2B2606B50082D84A /* ImageMetadata.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageMetadata.swift; sourceTree = "<group>"; };
+		F96B273E2B2606B50082D84A /* WikiResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WikiResponse.swift; sourceTree = "<group>"; };
+		F96B27402B2606B50082D84A /* WikiPageParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WikiPageParser.swift; sourceTree = "<group>"; };
+		F96B27412B2606B50082D84A /* WikipediaService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WikipediaService.swift; sourceTree = "<group>"; };
+		F96B27432B2606B50082D84A /* String+HTML.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+HTML.swift"; sourceTree = "<group>"; };
+		F96B27452B2606B50082D84A /* HistoryFooterReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryFooterReusableView.swift; sourceTree = "<group>"; };
+		F96B27462B2606B50082D84A /* InfoboxCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InfoboxCell.xib; sourceTree = "<group>"; };
+		F96B27472B2606B50082D84A /* SectionTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionTableCell.swift; sourceTree = "<group>"; };
+		F96B27482B2606B50082D84A /* ImageViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewCell.swift; sourceTree = "<group>"; };
+		F96B27492B2606B50082D84A /* LinkViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinkViewCell.swift; sourceTree = "<group>"; };
+		F96B274A2B2606B50082D84A /* LinkViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LinkViewCell.xib; sourceTree = "<group>"; };
+		F96B274B2B2606B50082D84A /* InfoboxCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoboxCell.swift; sourceTree = "<group>"; };
+		F96B274C2B2606B50082D84A /* LoadingOverlay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingOverlay.swift; sourceTree = "<group>"; };
+		F96B274D2B2606B50082D84A /* ThumbnailPageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThumbnailPageCell.swift; sourceTree = "<group>"; };
+		F96B274E2B2606B50082D84A /* ImageViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageViewCell.xib; sourceTree = "<group>"; };
+		F96B274F2B2606B50082D84A /* ThumbnailPageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ThumbnailPageCell.xib; sourceTree = "<group>"; };
+		F96B27692B2607890082D84A /* tv-wiki.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "tv-wiki.entitlements"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F96B26FF2B26027D0082D84A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F96B27192B2604A00082D84A /* Kingfisher in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F96B26F92B26027D0082D84A = {
+			isa = PBXGroup;
+			children = (
+				F96B27042B26027D0082D84A /* tv-wiki */,
+				F96B27032B26027D0082D84A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F96B27032B26027D0082D84A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F96B27022B26027D0082D84A /* tv-wiki.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F96B27042B26027D0082D84A /* tv-wiki */ = {
+			isa = PBXGroup;
+			children = (
+				F96B27692B2607890082D84A /* tv-wiki.entitlements */,
+				F96B27442B2606B50082D84A /* components */,
+				F96B27322B2606B50082D84A /* controllers */,
+				F96B273B2B2606B50082D84A /* models */,
+				F96B273F2B2606B50082D84A /* services */,
+				F96B27422B2606B50082D84A /* utils */,
+				F96B27162B2603DE0082D84A /* Info.plist */,
+				F96B27052B26027D0082D84A /* AppDelegate.swift */,
+				F96B27072B26027D0082D84A /* ViewController.swift */,
+				F96B27092B26027D0082D84A /* Main.storyboard */,
+				F96B270C2B26027E0082D84A /* Assets.xcassets */,
+				F96B270E2B26027E0082D84A /* LaunchScreen.storyboard */,
+				F96B272D2B2605A40082D84A /* Localizable.strings */,
+			);
+			path = "tv-wiki";
+			sourceTree = "<group>";
+		};
+		F96B27322B2606B50082D84A /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F96B27332B2606B50082D84A /* SectionsViewController.swift */,
+				F96B27342B2606B50082D84A /* FavoritesViewController.swift */,
+				F96B27352B2606B50082D84A /* ImagesPageViewController.swift */,
+				F96B27362B2606B50082D84A /* SearchResultViewController.swift */,
+				F96B27372B2606B50082D84A /* DiscoverViewController.swift */,
+				F96B27382B2606B50082D84A /* WikiPageViewController.swift */,
+				F96B27392B2606B50082D84A /* PageImageViewControler.swift */,
+				F96B273A2B2606B50082D84A /* HistoryViewController.swift */,
+			);
+			path = controllers;
+			sourceTree = "<group>";
+		};
+		F96B273B2B2606B50082D84A /* models */ = {
+			isa = PBXGroup;
+			children = (
+				F96B273C2B2606B50082D84A /* WikiPageContent.swift */,
+				F96B273D2B2606B50082D84A /* ImageMetadata.swift */,
+				F96B273E2B2606B50082D84A /* WikiResponse.swift */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		F96B273F2B2606B50082D84A /* services */ = {
+			isa = PBXGroup;
+			children = (
+				F96B27402B2606B50082D84A /* WikiPageParser.swift */,
+				F96B27412B2606B50082D84A /* WikipediaService.swift */,
+			);
+			path = services;
+			sourceTree = "<group>";
+		};
+		F96B27422B2606B50082D84A /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				F96B27432B2606B50082D84A /* String+HTML.swift */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+		F96B27442B2606B50082D84A /* components */ = {
+			isa = PBXGroup;
+			children = (
+				F96B27452B2606B50082D84A /* HistoryFooterReusableView.swift */,
+				F96B27462B2606B50082D84A /* InfoboxCell.xib */,
+				F96B27472B2606B50082D84A /* SectionTableCell.swift */,
+				F96B27482B2606B50082D84A /* ImageViewCell.swift */,
+				F96B27492B2606B50082D84A /* LinkViewCell.swift */,
+				F96B274A2B2606B50082D84A /* LinkViewCell.xib */,
+				F96B274B2B2606B50082D84A /* InfoboxCell.swift */,
+				F96B274C2B2606B50082D84A /* LoadingOverlay.swift */,
+				F96B274D2B2606B50082D84A /* ThumbnailPageCell.swift */,
+				F96B274E2B2606B50082D84A /* ImageViewCell.xib */,
+				F96B274F2B2606B50082D84A /* ThumbnailPageCell.xib */,
+			);
+			path = components;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F96B27012B26027D0082D84A /* tv-wiki */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F96B27132B26027E0082D84A /* Build configuration list for PBXNativeTarget "tv-wiki" */;
+			buildPhases = (
+				F96B26FE2B26027D0082D84A /* Sources */,
+				F96B26FF2B26027D0082D84A /* Frameworks */,
+				F96B27002B26027D0082D84A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "tv-wiki";
+			packageProductDependencies = (
+				F96B27182B2604A00082D84A /* Kingfisher */,
+			);
+			productName = "tv-wiki";
+			productReference = F96B27022B26027D0082D84A /* tv-wiki.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F96B26FA2B26027D0082D84A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					F96B27012B26027D0082D84A = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+				};
+			};
+			buildConfigurationList = F96B26FD2B26027D0082D84A /* Build configuration list for PBXProject "tv-wiki" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				es,
+				fr,
+			);
+			mainGroup = F96B26F92B26027D0082D84A;
+			packageReferences = (
+				F96B27172B2604A00082D84A /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
+			productRefGroup = F96B27032B26027D0082D84A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F96B27012B26027D0082D84A /* tv-wiki */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F96B27002B26027D0082D84A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F96B27102B26027E0082D84A /* LaunchScreen.storyboard in Resources */,
+				F96B275F2B2606B50082D84A /* InfoboxCell.xib in Resources */,
+				F96B27632B2606B50082D84A /* LinkViewCell.xib in Resources */,
+				F96B272B2B2605A40082D84A /* Localizable.strings in Resources */,
+				F96B270D2B26027E0082D84A /* Assets.xcassets in Resources */,
+				F96B27672B2606B50082D84A /* ImageViewCell.xib in Resources */,
+				F96B270B2B26027D0082D84A /* Main.storyboard in Resources */,
+				F96B27682B2606B50082D84A /* ThumbnailPageCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F96B26FE2B26027D0082D84A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F96B27522B2606B50082D84A /* ImagesPageViewController.swift in Sources */,
+				F96B27082B26027D0082D84A /* ViewController.swift in Sources */,
+				F96B27622B2606B50082D84A /* LinkViewCell.swift in Sources */,
+				F96B27652B2606B50082D84A /* LoadingOverlay.swift in Sources */,
+				F96B27542B2606B50082D84A /* DiscoverViewController.swift in Sources */,
+				F96B275D2B2606B50082D84A /* String+HTML.swift in Sources */,
+				F96B275C2B2606B50082D84A /* WikipediaService.swift in Sources */,
+				F96B27642B2606B50082D84A /* InfoboxCell.swift in Sources */,
+				F96B275B2B2606B50082D84A /* WikiPageParser.swift in Sources */,
+				F96B27582B2606B50082D84A /* WikiPageContent.swift in Sources */,
+				F96B275A2B2606B50082D84A /* WikiResponse.swift in Sources */,
+				F96B27662B2606B50082D84A /* ThumbnailPageCell.swift in Sources */,
+				F96B27572B2606B50082D84A /* HistoryViewController.swift in Sources */,
+				F96B275E2B2606B50082D84A /* HistoryFooterReusableView.swift in Sources */,
+				F96B27502B2606B50082D84A /* SectionsViewController.swift in Sources */,
+				F96B27612B2606B50082D84A /* ImageViewCell.swift in Sources */,
+				F96B27512B2606B50082D84A /* FavoritesViewController.swift in Sources */,
+				F96B27562B2606B50082D84A /* PageImageViewControler.swift in Sources */,
+				F96B27532B2606B50082D84A /* SearchResultViewController.swift in Sources */,
+				F96B27602B2606B50082D84A /* SectionTableCell.swift in Sources */,
+				F96B27062B26027D0082D84A /* AppDelegate.swift in Sources */,
+				F96B27592B2606B50082D84A /* ImageMetadata.swift in Sources */,
+				F96B27552B2606B50082D84A /* WikiPageViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F96B27092B26027D0082D84A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F96B270A2B26027D0082D84A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F96B270E2B26027E0082D84A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F96B270F2B26027E0082D84A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		F96B272D2B2605A40082D84A /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F96B272C2B2605A40082D84A /* en */,
+				F96B272E2B2605A70082D84A /* es */,
+				F96B272F2B2605DB0082D84A /* fr */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F96B27112B26027E0082D84A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = appletvos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TVOS_DEPLOYMENT_TARGET = 17.0;
+			};
+			name = Debug;
+		};
+		F96B27122B26027E0082D84A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = appletvos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				TVOS_DEPLOYMENT_TARGET = 17.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F96B27142B26027E0082D84A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "tv-wiki/tv-wiki.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G49XQYC5WE;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "tv-wiki/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "TV Wiki";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Automatic;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.2;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jva.tv-wiki";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 13.0;
+			};
+			name = Debug;
+		};
+		F96B27152B26027E0082D84A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "tv-wiki/tv-wiki.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G49XQYC5WE;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "tv-wiki/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "TV Wiki";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Automatic;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.2;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jva.tv-wiki";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 13.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F96B26FD2B26027D0082D84A /* Build configuration list for PBXProject "tv-wiki" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F96B27112B26027E0082D84A /* Debug */,
+				F96B27122B26027E0082D84A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F96B27132B26027E0082D84A /* Build configuration list for PBXNativeTarget "tv-wiki" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F96B27142B26027E0082D84A /* Debug */,
+				F96B27152B26027E0082D84A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F96B27172B2604A00082D84A /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.9.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F96B27182B2604A00082D84A /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F96B27172B2604A00082D84A /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = F96B26FA2B26027D0082D84A /* Project object */;
+}

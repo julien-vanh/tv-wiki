@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.XIB" version="3.0" toolsVersion="17701" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="appleTV" appearance="light"/>
+    <dependencies>
+        <deployment identifier="tvOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="LinkViewCell" id="zLZ-PF-M9D" customClass="LinkViewCell" customModule="TV_Wiki" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="540" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="jPu-af-pmJ">
+                <rect key="frame" x="0.0" y="0.0" width="540" height="100"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LinkViewCellI" translatesAutoresizingMaskIntoConstraints="NO" id="KZq-NF-cGc">
+                        <rect key="frame" x="0.0" y="0.0" width="540" height="100"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="label 2 lines efihfs seihf sel hsefl seil fef lishelf sef osjefoj sefmose sef" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="36d-ej-9sF">
+                        <rect key="frame" x="100" y="0.0" width="425" height="100"/>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="KZq-NF-cGc" firstAttribute="leading" secondItem="jPu-af-pmJ" secondAttribute="leading" id="1Sk-97-Bl8"/>
+                    <constraint firstAttribute="trailing" secondItem="36d-ej-9sF" secondAttribute="trailing" constant="15" id="4az-MJ-V56"/>
+                    <constraint firstItem="KZq-NF-cGc" firstAttribute="top" secondItem="jPu-af-pmJ" secondAttribute="top" id="Cy3-0f-hcM"/>
+                    <constraint firstItem="36d-ej-9sF" firstAttribute="leading" secondItem="jPu-af-pmJ" secondAttribute="leading" constant="100" id="VAP-vQ-r3x"/>
+                    <constraint firstItem="36d-ej-9sF" firstAttribute="top" secondItem="jPu-af-pmJ" secondAttribute="top" id="XuB-80-wkj"/>
+                    <constraint firstAttribute="trailing" secondItem="KZq-NF-cGc" secondAttribute="trailing" id="mkY-Fz-4OF"/>
+                    <constraint firstAttribute="bottom" secondItem="KZq-NF-cGc" secondAttribute="bottom" id="waR-GE-Lij"/>
+                    <constraint firstItem="KZq-NF-cGc" firstAttribute="leading" secondItem="jPu-af-pmJ" secondAttribute="leading" id="zLv-zN-mnK"/>
+                    <constraint firstAttribute="bottom" secondItem="36d-ej-9sF" secondAttribute="bottom" id="zVz-CT-OwM"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="501" height="230"/>
+            <connections>
+                <outlet property="backgroundImageView" destination="KZq-NF-cGc" id="eYT-T9-yYU"/>
+                <outlet property="linkLabel" destination="36d-ej-9sF" id="ZGr-df-AaK"/>
+            </connections>
+            <point key="canvasLocation" x="95" y="-150"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="LinkViewCellI" width="548" height="100"/>
+    </resources>
+</document>
